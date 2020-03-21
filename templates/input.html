@@ -2,11 +2,23 @@
 <html><body>
              <h2>Welcome to the APO Exposure Time Calculator</h2>
              <form action="/greet">
-                 What instrument are you using? <input type='text' name='instrument'><br>
+
+                 SN <input type='radio' name='type', value = 0><br>
+                 Time <input type='radio' name='type', value = 1><br>
+
+                 Select which instrument you're using: <select name="instrument" > <option value="Arctic" SELECTED>Arctic</option>
+                     <option value="Arces" SELECTED> Arces</option>
+                 <option value="DIS" SELECTED> DIS</option>
+                 <option value="TripleSpec" SELECTED> TripleSpec</option>
+                 <option value="NICFPS" SELECTED> NICFPS</option>
+
+                 </select><br>
+
+
                  What's the star's magnitude? <input type='number' name='mag'><br>
-                 What's the star's temprature? <input type='number' name='temp'><br>
+                 What's the star's temperature? <input type='number' name='temp'><br>
                  What's the seeing like? <input type='number' name='seeing'><br>
-                 What's the desired S/N? <input type='number' name='SN'><br>
+                 What's the desired S/N or exposure time? <input type='number' name='cacluation'><br>
                  <input type='submit' value='Continue'>
              </form>
          </body></html>
